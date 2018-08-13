@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
 const expressSanitizer = require('express-sanitizer'); //used to prevent scripts to run, if users input it in the blog content area 
+const PORT = process.env.PORT || 5000;
 
 //==================MongoDB DATABASE CONNECTION============================
 let uri = 'mongodb://heroku_l3mxsv2g:1ljtl0eco91v4aeavf3qh6g0rs@ds119652.mlab.com:19652/heroku_l3mxsv2g';
@@ -128,6 +129,4 @@ app.delete("/blogs/:id", function(req, res){
 
 
 //=============SERVER==============
-app.listen(8080, function(){
-	console.log("BlogApp server is running on Port: 8080");
-}); 
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
