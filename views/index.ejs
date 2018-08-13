@@ -9,7 +9,7 @@
                         	<img src="<%= blog.image %>" >
                     	</div>
                     	<div class="content">
-                <a class="header" id="hover-color" href= "/blogs/<%= blog._id %>" ><%= blog.title %></a>
+                <a class="header" id="hover-color" href= "/blogs/<%= blog._id %>" ><div id="title-font"><%= blog.title %></div></a>
                          	<div class="meta">
                              <span><%= blog.created.toDateString() %></span>
                          	</div>
@@ -17,7 +17,7 @@
                              <p><%- blog.body.substring(0, 100) %>...</p>
                          	</div>
                          	<div class="extra">
-                             <a class="ui floated grey button" href="/blogs/<%= blog._id %>">
+                             <a class="ui floated teal button" href="/blogs/<%= blog._id %>">
                                  Read More
                              </a>
                          </div>
