@@ -10,6 +10,15 @@
 				<div class="ui container">
 					<div class="header item"><i class="cloud icon"></i>Dream Blog</div>
 					<a href="/" class="item">Home</a>
-					<a href="/blogs/new" class="item">Create Post</a>
+					<div class="right menu">
+						<% if(!currentUser){ %>
+    					<a href="/login" class="ui item">Login</a>
+    					<a href="/register" class="ui item">Sign Up</a>
+    					<% } else { %>
+    					<a href="#" class="ui item">Signed in as <%= currentUser.username %></a>
+    					<a href="/blogs/new" class="item">Create Post</a>
+    					<a href="/logout" class="ui item">Logout</a>
+    					<% } %>
+  					</div>
 				</div>
 			</div>

@@ -1,4 +1,4 @@
-i.icon {
+i.cloud {
 	font-size: 2em;
 }
 
@@ -17,3 +17,29 @@ i.icon {
 /* #title-font {
 	font-size: 30px;
 } */
+
+/* ------ login show page */
+.login{
+	text-align: center;
+}
+
+.lg-form{
+	margin: 5px;
+	padding: 5px;
+}
+
+.pass-field{
+	padding: 5px;
+}
+
+.user-field{
+	padding: 5px;
+}
+
+.log-button{
+	padding: 10px;
+}
+
+/* ----------------- Register show page ------------- */
+
+/* ------- Blog show page ----- */
